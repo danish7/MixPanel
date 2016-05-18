@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_margin="10dp">
+
+    <ImageView
+        android:id="@+id/profile_image"
+        android:layout_width="75dp"
+        android:layout_height="75dp" />
+
+    <LinearLayout
+        android:layout_toRightOf="@id/profile_image"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:hint="Name"/>
+
+        <RelativeLayout
+            android:layout_marginTop="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/locationHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:hint="location : "/>
+
+            <TextView
+                android:id="@+id/locationValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_toRightOf="@id/locationHeading"
+                android:layout_marginLeft="5dp"
+                android:layout_alignBaseline="@id/locationHeading"
+                android:hint=""/>
+
+            <TextView
+                android:id="@+id/phoneHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_below="@id/locationHeading"
+                android:hint="phone : "/>
+
+            <TextView
+                android:id="@+id/phoneValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_toRightOf="@id/phoneHeading"
+                android:layout_marginLeft="5dp"
+                android:layout_alignBaseline="@id/phoneHeading"
+                android:hint=""/>
+
+            <TextView
+                android:id="@+id/emailHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_below="@id/phoneHeading"
+                android:hint="email : "/>
+
+            <TextView
+                android:id="@+id/emailValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_toRightOf="@id/emailHeading"
+                android:layout_marginLeft="5dp"
+                android:layout_alignBaseline="@id/emailHeading"
+                android:hint=""/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
